@@ -43,3 +43,16 @@ div#text {
 	margin-top: 10%;
 	margin-bottom: 10px;
 }
+
+div#search {
+	width: 300px;
+	margin: 0 auto;
+}
+
+div#search-box {
+	float: left;
+}
+
+button#search_button {
+	margin-top: 10px;
+}
