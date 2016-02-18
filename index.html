@@ -10,7 +10,12 @@
 	<body>
 		<div id="wrapper">
 			<header>
-				<span id="login-text">Hello! <a href="#">Sign in</a> or <a href="#">Register</a></span>
+				<span id="login-text">Hello! 
+					<a id="login" href="javascript:void(0)">Sign in</a> or 
+					<a id="register" href="javascript:void(0)">Register</a>
+				</span>
+
+				<span id="links"><a href="#">My Books</a> <a id="my_account" href="#">My Account</a><a id="sign_out" href="#">Sign Out</a></span>
 			</header>
 			<div id="content-wrapper">
 				<div id="content">
@@ -19,18 +24,28 @@
 						Find new and used textbooks that will fit your budget!
 					</div>
 					<div id="search">
-						<div id="search-box">
-							<input id="text_search_box" type="text" value="Search">
-						</div>
-						<div id="search-options">
-							<input type="radio" name="gender" value="" checked> Title
-							<input type="radio" name="gender" value=""> ISBN
-						</div>
+						<input id="search_box" type="text" value="Search by title">
+
+						<input id="title_radio" type="radio" name="search_type" value="title" checked> Title
+						<input id="isbn_radio" type="radio" name="search_type" value="isbn"> ISBN
+
+						<br>
 
 						<button id="search_button">Search</button>
 					</div>
 				</div>
 			</div>
+			<footer>
+				<span id="copyright_text">© 2016 Alex Marshall. All rights reserved.</span>
+			</footer>
 		</div>
+		<div id="register_popup" class="white_content">This is the lightbox content. <a id="register_close" href="javascript:void(0)">Close</a>
+
+		</div>
+
+		<div id="login_popup" class="white_content">This is the lightbox content. <a id="login_close" href="javascript:void(0)">Close</a>
+
+		</div>
+    	<div id="fade" class="black_overlay"></div>
 	</body>
 </html>
