@@ -185,14 +185,14 @@ span.result_price {
 }
 
 span.result_seller {
-	position: relative;
-	top: 15px;
-	left: -113px;
+	margin-top: 15px;
+	display: block;
+	text-align: left;
+	padding-left: 12px;
 }
 
 button.result_button {
-	position: relative;
-	top: 30px;
+	margin-top: 20px;
 	width: 150px;
 	height: 25px;
 }
