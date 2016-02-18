@@ -10,25 +10,103 @@
 	<body>
 		<div id="wrapper">
 			<header>
-				<span id="login-text">Hello! <a href="#">Sign in</a> or <a href="#">Register</a></span>
+				<span id="login-text">Hello! 
+					<a id="login" href="javascript:void(0)">Sign in</a> or 
+					<a id="register" href="javascript:void(0)">Register</a>
+				</span>
+
+				<span id="links"><a href="#">My Books</a> <a id="my_account" href="#">My Account</a><a id="sign_out" href="#">Sign Out</a></span>
 			</header>
 			<div id="content-wrapper">
 				<div id="content">
-					<div id="text">
-						Textbooks are expensive. <br>
-						Find new and used textbooks that will fit your budget!
-					</div>
-					<div id="search">
-						<div id="search-box">
-							<input id="text_search_box" type="text" value="Search">
-						</div>
-							<input type="radio" name="gender" value="" checked> Title
-							<input type="radio" name="gender" value=""> ISBN
+					<div id="refine_search"> 
+						<input type="text" value="Search phrase">
+						<input id="title_radio" type="radio" name="search_type" value="title" checked> Title
+						<input id="isbn_radio" type="radio" name="search_type" value="isbn"> ISBN
 
 						<button id="search_button">Search</button>
 					</div>
+
+					<div id="search_results">
+						<div class="search_result"> 
+							<img class="result_image" src="http://ecx.images-amazon.com/images/I/51sSVlrA-mL._SX314_BO1,204,203,200_.jpg">
+							<h2 class="result_title">Applied Combinatorics</h2>
+							<h3 class="result_author">By: Some Author </h3>
+
+							<span class="result_price"> Price: $55 </span> <br>
+
+							<span class="result_seller">Seller: <a href="#">adam1996</a></span>
+
+							<button class="result_button">Contact Seller</button>
+						</div>
+
+						<div class="search_result"> 
+							<img class="result_image" src="http://ecx.images-amazon.com/images/I/51sSVlrA-mL._SX314_BO1,204,203,200_.jpg">
+							<h2 class="result_title">Applied Combinatorics</h2>
+							<h3 class="result_author">By: Some Author </h3>
+
+							<span class="result_price"> Price: $55 </span> <br>
+
+							<span class="result_seller">Seller: <a href="#">adam1996</a></span>
+
+							<button class="result_button">Contact Seller</button>
+						</div>
+
+						<div class="search_result"> 
+							<img class="result_image" src="http://ecx.images-amazon.com/images/I/51sSVlrA-mL._SX314_BO1,204,203,200_.jpg">
+							<h2 class="result_title">Applied Combinatorics</h2>
+							<h3 class="result_author">By: Some Author </h3>
+
+							<span class="result_price"> Price: $55 </span> <br>
+
+							<span class="result_seller">Seller: <a href="#">adam1996</a></span>
+
+							<button class="result_button">Contact Seller</button>
+						</div>
+
+						<div class="search_result"> 
+							<img class="result_image" src="http://ecx.images-amazon.com/images/I/51sSVlrA-mL._SX314_BO1,204,203,200_.jpg">
+							<h2 class="result_title">Applied Combinatorics</h2>
+							<h3 class="result_author">By: Some Author </h3>
+
+							<span class="result_price"> Price: $55 </span> <br>
+
+							<span class="result_seller">Seller: <a href="#">adam1996</a></span>
+
+							<button class="result_button">Contact Seller</button>
+						</div>
+
+						<div class="search_result"> 
+							<img class="result_image" src="http://ecx.images-amazon.com/images/I/51sSVlrA-mL._SX314_BO1,204,203,200_.jpg">
+							<h2 class="result_title">Applied Combinatorics</h2>
+							<h3 class="result_author">By: Some Author </h3>
+
+							<span class="result_price"> Price: $55 </span> <br>
+
+							<span class="result_seller">Seller: <a href="#">adam1996</a></span>
+
+							<button class="result_button">Contact Seller</button>
+						</div>
+
+					</div>
 				</div>
 			</div>
+			<footer>
+				<span id="copyright_text">© 2016 Alex Marshall. All rights reserved.</span>
+			</footer>
 		</div>
+		<div id="register_popup" class="white_content"> <a id="register_close" href="javascript:void(0)">Close</a>
+			<h1>Register</h1>
+			<div style="padding-left:80px" class="register_input">Email: <input type="text"></div>
+			<div style="padding-left:54px" class="register_input">Username: <input type="text"></div>
+			<div style="padding-left:58px" class="register_input">Password: <input type="text"></div>
+			<div class="register_input">Confirm Password: <input type="text"></div>
+			<button id="register_submit">Submit</button>
+		</div>
+
+		<div id="login_popup" class="white_content"> <a id="login_close" href="javascript:void(0)">Close</a>
+			<h1>Login</h1>
+		</div>
+    	<div id="fade" class="black_overlay"></div>
 	</body>
 </html>
