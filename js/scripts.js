@@ -21,11 +21,17 @@ $(document).ready(function($) {
     	$('search_box').val('Search by ' + search_type);
     });
 
-    // Login link is clicked, show login popup
-    $('a#login').click(function(event) {
-    	$('div#login_popup').css('display','block');
-    	$('div#fade').css('display','block');
-    });
+    // Login functionality not part of prototype, so I'm going to leave it out for now.
+    // // Login link is clicked, show login popup
+    // $('a#login').click(function(event) {
+    // 	$('div#login_popup').css('display','block');
+    // 	$('div#fade').css('display','block');
+    // });
+    // // Login close is clicked, close login popup
+    // $('a#login_close').click(function(event) {
+    //     $('div#login_popup').css('display','none');
+    //     $('div#fade').css('display','none');    
+    // });
 
     // Register link is clicked, show register popup
     $('a#register').click(function(event) {
@@ -36,12 +42,6 @@ $(document).ready(function($) {
     // Register close is clicked, close register popup
     $('a#register_close').click(function(event) {
     	$('div#register_popup').css('display','none');
-    	$('div#fade').css('display','none');    
-    });
-
-    // Login close is clicked, close login popup
-    $('a#login_close').click(function(event) {
-    	$('div#login_popup').css('display','none');
     	$('div#fade').css('display','none');    
     });
 
