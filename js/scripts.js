@@ -44,4 +44,9 @@ $(document).ready(function($) {
     	$('div#login_popup').css('display','none');
     	$('div#fade').css('display','none');    
     });
+
+    // Go to search results page. Search functionality not implemented yet.
+    $('button#search_button').click(function(event) {
+		window.location.href = "search_results.html";    
+	});
 });
