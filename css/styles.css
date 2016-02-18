@@ -132,7 +132,6 @@ div.register_input {
 }
 
 button#register_submit {
-	width: 50px;
 	margin-left: 100px;
 	margin-top: 5px;
 }
