@@ -1,7 +1,7 @@
 $(document).ready(function($) {
 
 	// Clearing and re-populating the search box appropriately on focus/blur
-	$('search_box').on({
+	$('.dynamic_searchbox').on({
 		focus: function(event) {
         	if (event.target.value.startsWith('Search')) {
         		event.target.value = '';
@@ -18,7 +18,7 @@ $(document).ready(function($) {
 	// One of the radio buttons are clicked to change the search type
     $('input[type=radio][name=search_type]').change(function(event) {
     	var search_type = this.value === 'title' ? 'title' : 'ISBN';
-    	$('search_box').val('Search by ' + search_type);
+    	$('.dynamic_searchbox').val('Search by ' + search_type);
     });
 
     // Login functionality not part of prototype, so I'm going to leave it out for now.
