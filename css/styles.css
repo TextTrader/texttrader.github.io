@@ -162,6 +162,11 @@ div.search_result {
 	float: left;
 }
 
+div.search_result:hover {
+	background: #a6a6a6;
+    cursor: pointer;
+}
+
 img.result_image {
 	height: 120px;
 	width: 100px;

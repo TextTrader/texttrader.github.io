@@ -49,4 +49,8 @@ $(document).ready(function($) {
     $('button#search_button').click(function(event) {
 		window.location.href = "search_results.html";    
 	});
+
+    $('div.search_result').click(function(event) {
+        window.location.href = "sale_detail.html"
+    });
 });
