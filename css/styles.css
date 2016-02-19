@@ -196,3 +196,56 @@ button.result_button {
 	width: 150px;
 	height: 25px;
 }
+
+div#book_details {
+	text-align: left;
+	padding: 10px;
+	position: absolute;
+	top: 84px;
+	bottom: 28px;
+	right:10%;
+	left:10%;
+	overflow: auto;
+}
+
+div#book_details h1#title {
+	margin-bottom: 5px;
+}
+
+div#book_details span#author {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+span#book_edition {
+	color: #666666;
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+img#book_image {
+	max-width: 200px;
+	max-height: 300px;
+	margin-right: 15px;
+	float:left;
+}
+
+.price_text {
+	color: #216C2A;
+	font-weight: bold;
+}
+
+button#contact_seller {
+	margin-top: 20px;
+	width: 150px;
+	height: 25px;
+}
+
+span#asking_price, span#seller {
+	line-height: 2;
+}
+
+span#comment {
+	font-style: italic;
+}
